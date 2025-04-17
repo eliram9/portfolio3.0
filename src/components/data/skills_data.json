@@ -1,0 +1,74 @@
+{
+    "skills": [
+        { "id": 1, "item": "HTML5" },
+        { "id": 2, "item": "CSS3" },
+        { "id": 3, "item": "JS/TS" },
+        { "id": 4, "item": "Responsive Design" },
+        { "id": 5, "item": "RESTful APIs" },
+        { "id": 6, "item": "GraphQL" },
+        { "id": 7, "item": "React.js" },
+        { "id": 8, "item": "Next.js" },
+        { "id": 9, "item": "SCSS" },
+        { "id": 10, "item": "Tailwind CSS" },
+        {"id": 11, "item": "AI‑assisted workflows" },
+        { "id": 12, "item": "Node.js" }
+        
+    ],
+     "tools": [
+        {
+            "id": 1,
+            "item": "Git",
+            "icon": "https://cdn.simpleicons.org/git"
+          },
+          {
+            "id": 2,
+            "item": "GitHub",
+            "icon": "https://cdn.simpleicons.org/github"
+          },
+          {
+            "id": 3,
+            "item": "Cypress",
+            "icon": "https://cdn.simpleicons.org/cypress"
+          },
+          {
+            "id": 4,
+            "item": "Docker",
+            "icon": "https://cdn.simpleicons.org/docker"
+          },
+          {
+            "id": 5,
+            "item": "Firebase",
+            "icon": "https://cdn.simpleicons.org/firebase"
+          },
+          {
+            "id": 6,
+            "item": "MongoDB",
+            "icon": "https://cdn.simpleicons.org/mongodb"
+          },
+          {
+            "id": 7,
+            "item": "Figma",
+            "icon": "https://cdn.simpleicons.org/figma"
+          },
+          {
+            "id": 8,
+            "item": "Grok",
+            "icon": "../../../public/grok.svg"  
+          },
+          {
+            "id": 9,
+            "item": "ChatGPT",
+            "icon": "https://cdn.simpleicons.org/openai"
+          },
+          {
+            "id": 10,
+            "item": "Claude",
+            "icon": "https://cdn.simpleicons.org/anthropic"
+          },
+          {
+            "id": 11,
+            "item": "Agile",
+            "icon": "../../../public/agile4.svg"
+          }
+    ]
+} 

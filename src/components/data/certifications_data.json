@@ -1,0 +1,16 @@
+[
+    {
+        "icon": "apollo",
+        "title": "Apollo GraphQL",
+        "description": "Graph Developer - Associate",
+        "issueDate": "2024",
+        "certificateUrl": "#"
+    },
+    {
+        "icon": "aws",
+        "title": "AWS",
+        "description": "AWS Certified Cloud Practitioner",
+        "issueDate": "2023",
+        "certificateUrl": "#"
+    }
+] 

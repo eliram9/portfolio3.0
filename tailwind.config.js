@@ -8,6 +8,14 @@ export default {
     ],
     theme: {
       extend: {
+        colors: {
+            main: '#4E5FFF',   
+            black: '#1E1E1E',
+            white: '#FFFFFF',
+            darkGray: '#656565', 
+            lightGray: '#D9D9D9',
+            special: 'linear-gradient(to right, #D9D9D9, #1E1E1E)', 
+        },
         fontFamily: {
           'sans': ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
           'orbitron': ['Orbitron', 'sans-serif'],

@@ -54,7 +54,7 @@ const ScrollDownIcon = () => {
                 duration: 0.3
             }}
         >
-            <div className="relative w-7 h-12 border-2 border-indigo-500 rounded-full flex items-center justify-center bg-black/50 backdrop-blur-sm">
+            <div className="relative w-7 h-12 border-2 border-main rounded-full flex items-center justify-center bg-black/50 backdrop-blur-sm">
                 <motion.div
                     animate={controls}
                     className="w-2 h-2 bg-white rounded-full"
