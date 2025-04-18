@@ -15,10 +15,10 @@ const Hero = () => {
                 <div className="flex flex-col-reverse lg:flex-row items-center gap-3">
                     {/* Left Section - Text Content */}
                     <div className="flex-1 space-y-6 text-center lg:text-left">
-                        <h1 className="text-3xl md:text-4xl lg:text-xl font-bold">Hi, I'm</h1> 
-                        <h1 className="text-main text-4xl md:text-5xl lg:text-6xl font-bold font-orbitron tracking-wide z-10">ELIRAM MALACHI</h1>
-                        <h2 className="text-2xl md:text-3xl text-gray-400">Full Stack Developer</h2>
-                        <p className="text-lg text-gray-300 max-w-2xl mx-auto lg:mx-0">
+                        <h1 className="text-3xl md:text-4xl lg:text-xl">Hi, I'm</h1> 
+                        <h1 className="text-main text-4xl md:text-5xl lg:text-6xl font-bold font-orbitron tracking-wide z-10 pb-10">ELIRAM MALACHI</h1>
+                        <h2 className="text-2xl md:text-3xl text-gray-400 font-light">Full Stack Developer</h2>
+                        <p className="text-lg text-gray-300 max-w-2xl mx-auto lg:mx-0 font-light">
                             I build exceptional digital experiences that make an impact. 
                             Specializing in modern web technologies and user-centric design.
                         </p>

@@ -1,0 +1,40 @@
+{
+    "experiences": [
+        {
+            "id": 1,
+            "role": "Software Engineer",
+            "company": "Booz Allen Hamilton",
+            "period": "2022 - Present",
+            "logo": "../../../public/bah.png",
+            "description": "Led the development of multiple web applications using React, Node.js, and modern cloud technologies. Implemented CI/CD pipelines and automated testing.",
+            "skills": ["React", "Node.js", "AWS", "Docker"]
+        },
+        {
+            "id": 2,
+            "role": "Frontend Developer",
+            "company": "MirLogic Solutions Corp.",
+            "period": "2018 - 2020",
+            "logo": "../../../public/mir.jpeg",
+            "description": "Developed responsive web applications and implemented modern UI/UX practices. Collaborated with designers to create pixel-perfect implementations.",
+            "skills": ["JavaScript", "CSS", "UI/UX"]
+        },
+        {
+            "id": 3,
+            "role": "Software Engineer",
+            "company": "Booz Allen Hamilton",
+            "period": "2022 - Present",
+            "logo": "../../../public/bah.png",
+            "description": "Led the development of multiple web applications using React, Node.js, and modern cloud technologies. Implemented CI/CD pipelines and automated testing.",
+            "skills": ["React", "Node.js", "AWS", "Docker"]
+        },
+        {
+            "id": 4,
+            "role": "Frontend Developer",
+            "company": "MirLogic Solutions Corp.",
+            "period": "2018 - 2020",
+            "logo": "../../../public/mir.jpeg",
+            "description": "Developed responsive web applications and implemented modern UI/UX practices. Collaborated with designers to create pixel-perfect implementations.",
+            "skills": ["JavaScript", "CSS", "UI/UX"]
+        }
+    ]
+} 
