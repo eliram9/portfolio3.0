@@ -43,12 +43,12 @@ const Hero = () => {
                     </div>
 
                     {/* Right Section - Image */}
-                    <div className="flex-1 flex justify-end">
-                        <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
-                            <div className="absolute inset-0 bg-main rounded-full opacity-20 blur-3xl"></div>
-                            <img src="/profile.jpg" 
+                    <div className="flex-1 flex justify-end z-20">
+                        <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 2xl:w-[500px] 2xl:h-[500px]">
+                            {/* <div className="absolute inset-0 bg-main rounded-full opacity-20 blur-3xl"></div> */}
+                            <img src="../../public/em3.png" 
                                 alt="Eliram Malachi" 
-                                className="relative w-full h-full object-cover rounded-full border-4 border-main"
+                                className="relative w-full h-full object-cover contrast-35 saturate-30 hover:contrast-100 hover:saturate-100 transition-all duration-300 opacity-75"
                             />
                         </div>
                     </div>

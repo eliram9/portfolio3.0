@@ -69,6 +69,11 @@
             "id": 11,
             "item": "Agile",
             "icon": "../../../public/agile4.svg"
+          },
+          {
+            "id": 12,
+            "item": "Copilot",
+            "icon": "https://cdn.simpleicons.org/githubcopilot"
           }
     ]
-} 
+}

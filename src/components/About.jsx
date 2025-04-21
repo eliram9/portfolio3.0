@@ -10,8 +10,8 @@ import SkillsAndTools from './SkillsAndTools';
 const About = () => {
     return (
         <div>
-        <section id="about" className="min-h-screen bg-transparent py-20 text-white relative overflow-hidden font-inter">
-            <div className="container mx-auto lg:px-4 px-4 py-16 2xl:px-10">
+        <section id="about" className="min-h-screen bg-transparent text-white relative overflow-hidden font-inter">
+            <div className="container mx-auto lg:px-4 px-4 pt-16 2xl:px-10">
                 <div className="flex flex-col-reverse lg:flex-row items-center gap-3">
                     {/* Left Section - Text Content */}
                     <div className="flex-1 space-y-6 text-center lg:text-left">
