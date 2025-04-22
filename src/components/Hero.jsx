@@ -11,27 +11,27 @@ import ScrollDownIcon from './ScrollDownIcon';
 const Hero = () => {
     return (
         <div className="h-screen md:h-fit text-white relative overflow-hidden">
-            <div className="container mx-auto lg:px-4 px-4 py-16 2xl:px-10">
+            <div className="container mx-auto lg:px-4 px-4 py-2 md:py-10 2xl:px-10">
                 <div className="flex flex-col-reverse lg:flex-row items-center gap-3">
                     {/* Left Section - Text Content */}
                     <div className="flex-1 space-y-6 text-center lg:text-left">
-                        <h1 className="text-3xl md:text-4xl lg:text-xl">Hi, I'm</h1> 
-                        <h1 className="text-main text-4xl md:text-5xl lg:text-6xl font-bold font-orbitron tracking-wide z-10 pb-10">ELIRAM MALACHI</h1>
-                        <h2 className="text-2xl md:text-3xl text-gray-400 font-light">Full Stack Developer</h2>
-                        <p className="text-lg text-gray-300 max-w-2xl mx-auto lg:mx-0 font-light">
+                        <h1 className="text-2xl md:text-3xl lg:text-4xl">Hi, I'm</h1> 
+                        <h1 className="text-main text-4xl md:text-5xl lg:text-6xl font-bold font-orbitron tracking-wide z-10 pb-2">ELIRAM MALACHI</h1>
+                        <h2 className="text-xl md:text-3xl lg:text-3xl text-gray-300 font-light">Full Stack Developer</h2>
+                        <p className="text-sm md:text-lg lg:text-xl text-lightGray max-w-2xl mx-auto lg:mx-0 font-light">
                             I build exceptional digital experiences that make an impact. 
                             Specializing in modern web technologies and user-centric design.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <button className="px-6 py-3 bg-main text-white rounded-lg hover:bg-indigo-600 transition duration-300 flex items-center gap-2">
-                                Download CV
-                                <FaDownload className="text-lg" />
-                            </button>
+                        <button className="px-6 py-3 bg-main text-white rounded-lg hover:bg-indigo-600 transition duration-300 flex items-center justify-center md:justify-start gap-2 mx-auto md:mx-0 w-full sm:w-auto">
+                            Download CV
+                            <FaDownload className="text-lg" />
+                        </button>
                             <button className="px-6 py-3 border border-main text-main rounded-lg hover:bg-main hover:text-white transition duration-300">
                                 Contact Me
                             </button>
 
-                            <div className='flex items-center gap-4'>
+                            <div className='flex items-center gap-4 justify-center md:justify-start mx-auto md:mx-0'>
                                 <a href="#" className='w-10 h-10 flex items-center justify-center text-main border border-main rounded-full hover:bg-main hover:text-white transition duration-300'>
                                     <FaLinkedinIn className="text-lg" />
                                 </a>
@@ -44,12 +44,11 @@ const Hero = () => {
 
                     {/* Right Section - Image */}
                     <div className="flex-1 flex justify-end z-20">
-                        <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 2xl:w-[500px] 2xl:h-[500px]">
+                        <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[380px] 2xl:w-[600px] 2xl:h-[580px]">
                             {/* <div className="absolute inset-0 bg-main rounded-full opacity-20 blur-3xl"></div> */}
-                            <img src="../../public/em3.png" 
+                            <img src="../../public/em36.png" 
                                 alt="Eliram Malachi" 
-                                className="relative w-full h-full object-cover contrast-35 saturate-30 hover:contrast-100 hover:saturate-100 transition-all duration-300 opacity-75"
-                            />
+                                className="relative w-full h-full object-cover object-center transform scale-125 contrast-35 saturate-30 hover:contrast-100 hover:saturate-100 transition-all duration-300 opacity-75 xl:pb-20" />
                         </div>
                     </div>
                 </div>

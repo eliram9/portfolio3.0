@@ -29,10 +29,10 @@ const Navbar = () => {
                 <div className="flex justify-center py-4">
                     <>
                         {/* Gradient Border Wrapper */}
-                        <div className="p-[1px] rounded-full bg-gradient-to-r from-main to-black">
+                        <div className="p-[1px] rounded-full bg-gradient-to-l from-main to-black">
                             <div className='flex items-center space-x-8 bg-black rounded-full px-8 py-3'>
                                 <Link to="/" className="text-2xl text-main hover:text-indigo-300 transition duration-300 mr-10 font-orbitron">
-                                    ELIRAM.
+                                    ELIRAM
                                 </Link>
 
                                 {/* Desktop Menu */}
@@ -40,15 +40,18 @@ const Navbar = () => {
                                     <a href="#about" className="relative py-2 px-2 text-main hover:text-indigo-300 transition duration-300">
                                         About
                                     </a>
-                                    <a href="#skills" className="relative py-2 px-2 text-main hover:text-indigo-300 transition duration-300">
-                                        Skills
-                                    </a>
-                                    <Link to="/experience" className="relative py-2 px-2 text-main hover:text-indigo-300 transition duration-300">
+                                   
+                                    <a href="#experience" className="relative py-2 px-2 text-main hover:text-indigo-300 transition duration-300">
                                         Experience
-                                    </Link>
-                                    <Link to="/contact" className="relative py-2 px-2 text-main hover:text-indigo-300 transition duration-300">
+                                    </a>
+
+                                    <a href="#projects" className="relative py-2 px-2 text-main hover:text-indigo-300 transition duration-300">
+                                        Projects
+                                    </a>
+
+                                    <a href="#contact" className="relative py-2 px-2 text-main hover:text-indigo-300 transition duration-300">
                                         Contact
-                                    </Link>
+                                    </a>
                                 </div>
 
                                 {/* Mobile Menu Button */}

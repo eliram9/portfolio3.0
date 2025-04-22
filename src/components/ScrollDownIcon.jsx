@@ -45,7 +45,7 @@ const ScrollDownIcon = () => {
     return (
         <motion.div
             onClick={handleScroll}
-            className="flex items-center justify-center z-10 py-24"
+            className="flex items-center justify-center z-10 py-7"
             animate={{
                 opacity: isVisible ? 1 : 0,
                 y: isVisible ? 0 : 20

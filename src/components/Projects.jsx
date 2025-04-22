@@ -14,7 +14,7 @@ const Projects = () => {
         <section id="projects" className="min-h-screen bg-transparent py-20 text-white relative overflow-hidden font-inter">
             <div className="container mx-auto px-4 py-16">
                 <motion.h2 
-                    className="text-2xl mb-16 text-lightGray font-orbitron tracking-widest text-center"
+                    className="text-3xl mb-16 text-lightGray font-orbitron tracking-widest text-center"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}

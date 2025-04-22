@@ -8,10 +8,10 @@ import skillsData from './data/skills_data.json';
 
 const SkillsAndTools = () => {
     return (
-        <div id='skills' className="h-fit">
+        <div id='skills' className="h-fit mt-56">
             {/* Skills Section */}
-            <div className="this section">
-                <h2 className="text-2xl mb-12 text-lightGray font-orbitron tracking-widest text-center pb-6">S K I L L S</h2>
+            <div>
+                <h2 className="text-3xl mb-12 text-lightGray font-orbitron tracking-widest text-center pb-6">S K I L L S</h2>
             
                 {/* Skills Grid */}
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-7 mb-20">
@@ -42,7 +42,7 @@ const SkillsAndTools = () => {
 
             {/* Tools Grid Section */}
             <div>
-                <h2 className="text-2xl text-lightGray font-orbitron tracking-widest text-center">T O O L S  <span className='px-5'>&</span>  T E C H N O L O G I E S</h2>
+                <h2 className="text-3xl text-lightGray font-orbitron tracking-widest text-center mt-32">T O O L S  <span className='px-5'>&</span>  T E C H N O L O G I E S</h2>
                 <div>
                     <SpinningCarousel3D />
                 </div>

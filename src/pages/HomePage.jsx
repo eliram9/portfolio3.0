@@ -9,12 +9,42 @@ import Contact from '../components/Contact';
 
 const HomePage = () => {
     return (
-        <div className='bg-black'>
-            <Hero  />
-            <About />
-            <Experience />
+        <div className='bg-black'>        
+            {/* <div className='bg-yellow-300'>
+                <Hero  />
+            </div>    */}
+
+            <div className='relative'>
+                {/* SVG Background - 30% opacity as requested */}
+                <div 
+                    className='absolute inset-0 bg-cover bg-center opacity-15 z-0'
+                    style={{ backgroundImage: 'url(/waves4.svg)' }}  // Assuming your SVG is in the public folder
+                ></div>
+                
+                {/* Hero content on top of the background */}
+                <div className='relative z-10'>
+                    <Hero />
+                    <About  />
+                </div>
+            </div>
+
+            <div className='relative'>
+                {/* SVG Background - 30% opacity as requested */}
+                <div 
+                    className='absolute inset-0 bg-cover bg-center opacity-10 z-0'
+                    style={{ backgroundImage: 'url(/waves3.svg)' }}  // Assuming your SVG is in the public folder
+                ></div>
+                
+                {/* Hero content on top of the background */}
+                <div className='relative z-10'>
+                    <Experience />
+                    
+                </div>
+            </div>
+            <div> 
             <Projects />
-            <Contact />
+                <Contact />
+            </div>
         </div>
   )
 }
