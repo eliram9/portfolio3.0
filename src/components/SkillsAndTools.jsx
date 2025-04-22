@@ -8,7 +8,7 @@ import skillsData from './data/skills_data.json';
 
 const SkillsAndTools = () => {
     return (
-        <div className="h-fit">
+        <div id='skills' className="h-fit">
             {/* Skills Section */}
             <div className="this section">
                 <h2 className="text-2xl mb-12 text-lightGray font-orbitron tracking-widest text-center pb-6">S K I L L S</h2>

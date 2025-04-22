@@ -5,6 +5,9 @@ import emailjs from '@emailjs/browser';
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { FaLinkedinIn } from "react-icons/fa";
 
+import { EarthCanvas } from "./canvas";
+
+
 const Contact = () => {
     const formRef = useRef();
     const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -27,6 +30,7 @@ const Contact = () => {
         const serviceId = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
         const templateId = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID;
         const publicKey = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY;
+
 
         // Prepare template parameters based on your EmailJS template
         const templateParams = {
@@ -188,9 +192,9 @@ const Contact = () => {
                         className="w-full xl:w-1/2 h-[400px] xl:h-[600px]"
                     >
                         {/* Your 3D model component will go here */}
-                        <div className="w-full h-full bg-gray-900/50 border border-main/20 rounded-lg flex items-center justify-center">
+                        <div className="w-full h-full bg-transparent flex items-center justify-center">
                             {/* Replace this div with your 3D model component */}
-                            <p className="text-gray-400">Your 3D model or illustration here</p>
+                            <EarthCanvas />
                         </div>
                     </motion.div>
                 </div>

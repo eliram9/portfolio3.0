@@ -40,9 +40,9 @@ const Navbar = () => {
                                     <a href="#about" className="relative py-2 px-2 text-main hover:text-indigo-300 transition duration-300">
                                         About
                                     </a>
-                                    <Link to="/projects" className="relative py-2 px-2 text-main hover:text-indigo-300 transition duration-300">
-                                        Projects
-                                    </Link>
+                                    <a href="#skills" className="relative py-2 px-2 text-main hover:text-indigo-300 transition duration-300">
+                                        Skills
+                                    </a>
                                     <Link to="/experience" className="relative py-2 px-2 text-main hover:text-indigo-300 transition duration-300">
                                         Experience
                                     </Link>
@@ -79,20 +79,18 @@ const Navbar = () => {
                                     className="md:hidden absolute top-16 left-0 right-0 bg-black py-4"
                                 >
                                     <div className="flex flex-col items-center space-y-4">
-                                        <a
-                                            href="#about"
-                                            className="text-main hover:text-indigo-300 transition duration-300"
-                                            onClick={() => setIsMenuOpen(false)}
+                                        <a href="#about"
+                                           className="text-main hover:text-indigo-300 transition duration-300"
+                                           onClick={() => setIsMenuOpen(false)}
                                         >
                                             About
                                         </a>
-                                        <Link
-                                            to="/projects"
-                                            className="text-main hover:text-indigo-300 transition duration-300"
-                                            onClick={() => setIsMenuOpen(false)}
+                                        <a href="#skills"
+                                              className="text-main hover:text-indigo-300 transition duration-300"
+                                              onClick={() => setIsMenuOpen(false)}
                                         >
-                                            Projects
-                                        </Link>
+                                            Skills
+                                        </a>
                                         <Link
                                             to="/experience"
                                             className="text-main hover:text-indigo-300 transition duration-300"

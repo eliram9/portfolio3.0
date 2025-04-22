@@ -8,15 +8,14 @@ import Contact from '../components/Contact';
 
 
 const HomePage = () => {
-  return (
-    <div className='bg-black'>
-        <Hero  />
-        <About />
-        <Experience />
-        <Projects />
-        <Contact />
-    </div>
-
+    return (
+        <div className='bg-black'>
+            <Hero  />
+            <About />
+            <Experience />
+            <Projects />
+            <Contact />
+        </div>
   )
 }
 

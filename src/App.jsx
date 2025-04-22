@@ -3,16 +3,15 @@ import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 
 function App() {
-  return (
-    <Router>
-      <div className="min-h-screen bg-black">
-        <Navbar />        
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-        </Routes>
-      </div>
-    </Router>
-  );
+    return (
+        <Router>
+            <div className="min-h-screen bg-black">
+                <Navbar />        
+                <Routes>
+                <Route path="/" element={<HomePage />} /></Routes>
+            </div>
+        </Router>
+    );
 }
 
 export default App;
