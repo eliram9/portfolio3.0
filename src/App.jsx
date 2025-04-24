@@ -4,7 +4,7 @@ import HomePage from './pages/HomePage';
 
 function App() {
     return (
-        <Router>
+        <Router basename="/Portfolio3.0">
             <div className="min-h-screen bg-black">
                 <Navbar />        
                 <Routes>
