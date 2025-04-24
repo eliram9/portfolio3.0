@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 
 import SpinningCarousel3D from './SpinningCarousel3D';
 import skillsData from './data/skills_data.json';
+import SectionTitle from './SectionTitle';
 
 
 const SkillsAndTools = () => {
@@ -11,7 +12,7 @@ const SkillsAndTools = () => {
         <div id='skills' className="h-fit mt-56">
             {/* Skills Section */}
             <div>
-                <h2 className="text-3xl mb-12 text-lightGray font-orbitron tracking-widest text-center pb-6">S K I L L S</h2>
+                <SectionTitle text="S K I L L S" position="center" />
             
                 {/* Skills Grid */}
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-7 mb-20">
@@ -42,7 +43,8 @@ const SkillsAndTools = () => {
 
             {/* Tools Grid Section */}
             <div>
-                <h2 className="text-3xl text-lightGray font-orbitron tracking-widest text-center mt-32">T O O L S  <span className='px-5'>&</span>  T E C H N O L O G I E S</h2>
+                <h2 className="text-lg md:text-2xl lg:3xl text-lightGray font-orbitron tracking-widest text-center mt-32">T O O L S  <span className='px-5'>&</span>  T E C H N O L O G I E S</h2>
+                {/* <SectionTitle text={`T O O L S  &  T E C H N O L O G I E S`} position="center" /> */}
                 <div>
                     <SpinningCarousel3D />
                 </div>

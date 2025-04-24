@@ -6,6 +6,7 @@ import { TbBrandGithubFilled } from "react-icons/tb";
 import { FaLinkedinIn } from "react-icons/fa";
 
 import { EarthCanvas } from "./canvas";
+import SectionHeader from './SectionHeader';
 
 
 const Contact = () => {
@@ -65,19 +66,11 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="min-h-screen bg-transparent relative overflow-hidden font-inter">
+        <section id="contact" className="min-h-screen bg-transparent relative overflow-hidden font-inter pt-16">
             <div className="container mx-auto px-4 py-16">
-                <motion.h2 
-                    className="text-3xl mb-10 text-lightGray font-orbitron tracking-widest text-start"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5 }}
-                >
-                    C O N T A C T
-                </motion.h2>
+                <SectionHeader title="C O N T A C T" subtitle="GET IN TOUCH" position='start' />
 
-                <div className="flex flex-col-reverse xl:flex-row gap-10 items-center">
+                <div className="flex flex-col-reverse xl:flex-row gap-10 items-center pt-5">
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}

@@ -3,30 +3,23 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import experienceData from './data/experience_data.json';
+import SectionHeader from "./SectionHeader";
 
 
 const Experience = () => {
     return (
-        <section id="experience" className="min-h-screen bg-transparent mt-10 text-white relative overflow-hidden font-inter">
+        <section id="experience" className="min-h-screen bg-transparent pt-16 text-white relative overflow-hidden font-inter">
             <div className="container mx-auto px-4 py-16">
-                <motion.h2 
-                    className="text-3xl mb-16 text-lightGray font-orbitron tracking-widest text-center"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5 }}
-                >
-                    E X P E R I E N C E
-                </motion.h2>
+                <SectionHeader title="E X P E R I E N C E" subtitle="WHAT HAVE I DONE SO FAR" position='center' />
 
-                <div className="relative">
+                <div className="relative pt-20">
                     {/* Timeline Line - Desktop */}
                     <div className="absolute left-1/2 transform -translate-x-[1px] w-0.5 h-full bg-gradient-to-b from-main/80 via-main to-main/80 md:block hidden" />
                     
                     {/* Timeline Line - Mobile */}
                     <div className="absolute left-6 w-0.5 h-full bg-gradient-to-b from-main/80 via-main to-main/80 md:hidden block" />
 
-                    <div className="relative flex flex-col space-y-24 md:space-y-24 space-y-16">
+                    <div className="relative flex flex-col space-y-16 md:space-y-24 ">
                         {experienceData.experiences.map((exp, index) => (
                             <div key={exp.id} className="relative">
                                 {/* Desktop Layout */}

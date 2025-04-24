@@ -24,16 +24,16 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="">
+        <nav className="sticky top-0 z-50 bg-black w-full">
             <div className="max-w-6xl mx-auto px-4">
                 <div className="flex justify-center py-4">
                     <>
                         {/* Gradient Border Wrapper */}
                         <div className="p-[1px] rounded-full bg-gradient-to-l from-main to-black">
                             <div className='flex items-center space-x-8 bg-black rounded-full px-8 py-3'>
-                                <Link to="/" className="text-2xl text-main hover:text-indigo-300 transition duration-300 mr-10 font-orbitron">
+                                <a href="#hero" className="text-2xl text-main hover:text-indigo-300 transition duration-300 mr-10 font-orbitron">
                                     ELIRAM
-                                </Link>
+                                </a>
 
                                 {/* Desktop Menu */}
                                 <div className="hidden md:flex items-center space-x-6">
@@ -58,12 +58,13 @@ const Navbar = () => {
                                 <div className="md:hidden">
                                     <button
                                         onClick={toggleMenu}
-                                        className="text-main hover:text-indigo-300 focus:outline-none"
+                                        className="text-main hover:text-indigo-300 focus:outline-none transition-all duration-300 p-2 rounded-full hover:bg-main/10"
+                                        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                                     >
                                         {isMenuOpen ? (
-                                            <HiX className="h-6 w-6" />
+                                            <HiX className="h-6 w-6 transition-transform duration-300 transform rotate-90" />
                                         ) : (
-                                            <HiMenu className="h-6 w-6" />
+                                            <HiMenu className="h-6 w-6 transition-transform duration-300" />
                                         )}
                                     </button>
                                 </div>
@@ -79,35 +80,33 @@ const Navbar = () => {
                                     exit="closed"
                                     variants={menuVariants}
                                     transition={{ duration: 0.3 }}
-                                    className="md:hidden absolute top-16 left-0 right-0 bg-black py-4"
+                                    className="md:hidden fixed top-16 left-0 right-0 bg-black/90 backdrop-blur-md py-6 border-t border-main/20 shadow-lg z-50"
                                 >
-                                    <div className="flex flex-col items-center space-y-4">
+                                    <div className="flex flex-col items-center space-y-6 px-4">
                                         <a href="#about"
-                                           className="text-main hover:text-indigo-300 transition duration-300"
+                                           className="text-main hover:text-indigo-300 transition duration-300 text-lg font-medium w-full text-center py-2 border-b border-main/10"
                                            onClick={() => setIsMenuOpen(false)}
                                         >
                                             About
                                         </a>
                                         <a href="#skills"
-                                              className="text-main hover:text-indigo-300 transition duration-300"
+                                              className="text-main hover:text-indigo-300 transition duration-300 text-lg font-medium w-full text-center py-2 border-b border-main/10"
                                               onClick={() => setIsMenuOpen(false)}
                                         >
                                             Skills
                                         </a>
-                                        <Link
-                                            to="/experience"
-                                            className="text-main hover:text-indigo-300 transition duration-300"
+                                        <a href="#experience"
+                                            className="text-main hover:text-indigo-300 transition duration-300 text-lg font-medium w-full text-center py-2 border-b border-main/10"
                                             onClick={() => setIsMenuOpen(false)}
                                         >
                                             Experience
-                                        </Link>
-                                        <Link
-                                            to="/contact"
-                                            className="text-main hover:text-indigo-300 transition duration-300"
+                                        </a>
+                                        <a href="#contact"
+                                            className="text-main hover:text-indigo-300 transition duration-300 text-lg font-medium w-full text-center py-2"
                                             onClick={() => setIsMenuOpen(false)}
                                         >
                                             Contact
-                                        </Link>
+                                        </a>
                                     </div>
                                 </motion.div>
                             )}

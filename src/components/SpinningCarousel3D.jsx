@@ -44,7 +44,7 @@ const SpinningCarousel3D = () => {
 
     return (
         <div 
-            className="w-full max-w-lg aspect-[1/1] mx-auto relative h-96"
+            className="w-full max-w-lg aspect-[1/1] mx-auto relative h-[21rem] "
             style={{ perspective: "1000px" }}
         >
             <div 

@@ -17,7 +17,7 @@ const HomePage = () => {
             <div className='relative'>
                 {/* SVG Background - 30% opacity as requested */}
                 <div 
-                    className='absolute inset-0 bg-cover bg-center opacity-15 z-0'
+                    className='absolute inset-0 bg-cover bg-center opacity-10 z-0'
                     style={{ backgroundImage: 'url(/waves4.svg)' }}  // Assuming your SVG is in the public folder
                 ></div>
                 
@@ -41,9 +41,20 @@ const HomePage = () => {
                     
                 </div>
             </div>
-            <div> 
+            
             <Projects />
-                <Contact />
+            <div className='relative'>
+                {/* SVG Background - 30% opacity as requested */}
+                <div 
+                    className='absolute inset-0 bg-cover bg-center z-0'
+                    style={{ backgroundImage: 'url(/space.svg)' }}  // Assuming your SVG is in the public folder
+                ></div>
+                
+                {/* Hero content on top of the background */}
+                <div className='relative z-20'>
+                    <Contact />
+                    
+                </div>
             </div>
         </div>
   )

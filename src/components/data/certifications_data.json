@@ -4,13 +4,21 @@
         "title": "Apollo GraphQL",
         "description": "Graph Developer - Associate",
         "issueDate": "2024",
-        "certificateUrl": "#"
+        "certificateUrl": "https://www.apollographql.com/tutorials/certifications/9fb7a538-aadb-41b4-aa42-f68b53b18ee1"
+    },
+    
+    {
+        "icon": "ba",
+        "title": "Booz Allen Hamilton",
+        "description": "React.js Foundational",
+        "issueDate": "2024",
+        "certificateUrl": "https://www.credly.com/badges/8c4b0ff4-3dd2-4998-8f23-752362446522"
     },
     {
         "icon": "aws",
         "title": "AWS",
         "description": "AWS Certified Cloud Practitioner",
         "issueDate": "2023",
-        "certificateUrl": "#"
+        "certificateUrl": "https://www.credly.com/badges/2edd8c97-748e-4800-966d-d788818909df/linked_in_profile"
     }
 ] 

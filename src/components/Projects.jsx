@@ -7,23 +7,15 @@ import { TbBrandGithubFilled } from "react-icons/tb";
 import Tilt from "react-parallax-tilt";
 
 import projectsData from './data/projects_data.json';
+import SectionHeader from './SectionHeader';
 
 const Projects = () => {
     
     return (
         <section id="projects" className="min-h-screen bg-transparent py-20 text-white relative overflow-hidden font-inter">
             <div className="container mx-auto px-4 py-16">
-                <motion.h2 
-                    className="text-3xl mb-16 text-lightGray font-orbitron tracking-widest text-center"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5 }}
-                >
-                    P R O J E C T S
-                </motion.h2>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+                <SectionHeader title="P R O J E C T S" subtitle="MY WORK" position='center' />
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 mt-16">
                     {projectsData.projects && projectsData.projects.map((project, index) => (
                         <motion.div
                             key={project.id}
@@ -41,12 +33,15 @@ const Projects = () => {
                                 perspective={800}
                                 className="bg-gray-900 rounded-md overflow-hidden backdrop-blur-sm border-transparent border-2 hover:border-main transition-all duration-300 flex flex-col h-full"
                             >
-                                <div className="relative aspect-video overflow-hidden p-4">
+                                <div className="relative aspect-video overflow-hidden p-4 group">
                                     <img 
                                         src={project.image} 
                                         alt={project.title}
-                                        className="w-full h-full object-cover transition-transform duration-300 hover:scale-105 rounded-md"
+                                        className="w-full h-full object-cover transition-transform duration-300 rounded-md"
                                     />
+                                    
+                                    {/* Overlay */}
+                                    <div className="absolute top-4 left-4 right-4 bottom-4 bg-gray-900/60 rounded-md transition-opacity duration-300 group-hover:opacity-0 pointer-events-none" />
                                 </div>
                                 
                                 <div className="p-6 flex-grow">

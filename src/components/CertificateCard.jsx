@@ -1,7 +1,11 @@
 import React from 'react';
+
 import { motion } from 'framer-motion';
+
 import aws from '../icons/aws.png';
 import apollo from '../icons/apollo.png';
+import ba from '../icons/ba.png';
+
 
 const CertificateCard = ({ 
     icon, 
@@ -17,6 +21,8 @@ const CertificateCard = ({
                 return aws;
             case 'apollo':
                 return apollo;
+            case 'ba':
+                return ba;
             default:
                 return null;
         }
