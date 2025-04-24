@@ -1,10 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 
 function App() {
     return (
-        <Router basename="/Portfolio3.0">
+        <Router>
             <div className="min-h-screen bg-black">
                 <Navbar />        
                 <Routes>
