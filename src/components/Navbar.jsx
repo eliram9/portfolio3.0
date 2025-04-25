@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenu, HiX } from 'react-icons/hi';
+import Projects from './Projects';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,9 +32,11 @@ const Navbar = () => {
                         {/* Gradient Border Wrapper */}
                         <div className="p-[1px] rounded-full bg-gradient-to-l from-main to-black">
                             <div className='flex items-center space-x-8 bg-black rounded-full px-8 py-3'>
-                                <a href="#hero" className="text-2xl text-main hover:text-indigo-300 transition duration-300 mr-10 font-orbitron">
+                                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                                        className="text-2xl text-main hover:text-indigo-300 transition duration-300 mr-10 font-orbitron"
+                                >
                                     ELIRAM
-                                </a>
+                                </button>
 
                                 {/* Desktop Menu */}
                                 <div className="hidden md:flex items-center space-x-6">
@@ -89,18 +92,19 @@ const Navbar = () => {
                                         >
                                             About
                                         </a>
-                                        <a href="#skills"
-                                              className="text-main hover:text-indigo-300 transition duration-300 text-lg font-medium w-full text-center py-2 border-b border-main/10"
-                                              onClick={() => setIsMenuOpen(false)}
-                                        >
-                                            Skills
-                                        </a>
                                         <a href="#experience"
                                             className="text-main hover:text-indigo-300 transition duration-300 text-lg font-medium w-full text-center py-2 border-b border-main/10"
                                             onClick={() => setIsMenuOpen(false)}
                                         >
                                             Experience
                                         </a>
+                                        <a href="#projects"
+                                              className="text-main hover:text-indigo-300 transition duration-300 text-lg font-medium w-full text-center py-2 border-b border-main/10"
+                                              onClick={() => setIsMenuOpen(false)}
+                                        >
+                                            Projects
+                                        </a>
+                                        
                                         <a href="#contact"
                                             className="text-main hover:text-indigo-300 transition duration-300 text-lg font-medium w-full text-center py-2"
                                             onClick={() => setIsMenuOpen(false)}

@@ -41,7 +41,7 @@ const Projects = () => {
                                     />
                                     
                                     {/* Overlay */}
-                                    <div className="absolute top-4 left-4 right-4 bottom-4 bg-gray-900/60 rounded-md transition-opacity duration-300 group-hover:opacity-0 pointer-events-none" />
+                                    <div className="hidden md:block absolute top-4 left-4 right-4 bottom-4 bg-gray-900/60 rounded-md transition-opacity duration-300 group-hover:opacity-0 pointer-events-none" />
                                 </div>
                                 
                                 <div className="p-6 flex-grow">

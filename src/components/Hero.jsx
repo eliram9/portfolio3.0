@@ -5,12 +5,13 @@ import { TbBrandGithubFilled } from "react-icons/tb";
 import { FaLinkedinIn } from "react-icons/fa";
 
 import ScrollDownIcon from './ScrollDownIcon';
+import Eliram from '/em36.png';
 
 
 
 const Hero = () => {
     return (
-        <div id='hero' className="h-screen md:h-fit relative overflow-hidden">
+        <div className="h-screen md:h-fit relative overflow-hidden">
             <div className="container mx-auto lg:px-4 px-4 py-2 md:py-10 2xl:px-10">
                 <div className="flex flex-col-reverse lg:flex-row items-center gap-3">
                     {/* Left Section - Text Content */}
@@ -46,7 +47,7 @@ const Hero = () => {
                     <div className="flex-1 flex justify-end z-20">
                         <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[380px] 2xl:w-[600px] 2xl:h-[580px]">
                             {/* <div className="absolute inset-0 bg-main rounded-full opacity-20 blur-3xl"></div> */}
-                            <img src="../../public/em36.png" 
+                            <img src={Eliram} 
                                 alt="Eliram Malachi" 
                                 className="relative w-full h-full object-cover object-center transform scale-125 contrast-35 saturate-30 hover:contrast-100 hover:saturate-100 transition-all duration-300 opacity-75 xl:pb-20" />
                         </div>

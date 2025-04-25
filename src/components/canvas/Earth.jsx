@@ -6,7 +6,8 @@ import CanvasLoader from "./Loader";
 
 // Performance optimization: Add a lower-quality model for mobile devices
 const Earth = ({ isMobile }) => {
-  const earth = useGLTF("/planet/scene.gltf", true);
+  // Use URL constructor with import.meta.url to handle the path properly
+  const earth = useGLTF('/planet/scene.gltf');
   const modelRef = useRef();
   
   // Implement automatic rotation without relying on OrbitControls

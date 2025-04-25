@@ -5,7 +5,7 @@
             "title": "BigBrain Therapy",
             "description": "A responsive website built for BigBrain Therapy, a private mental health practice specializing in EMDR therapy, trauma recovery, ADHD, and anxiety treatment.",
             "techStack": ["React.js", "GraphQL", "Tailwind","UI/UX", "Figma"],
-            "image": "../../../bbt.png",
+            "image": "/bbt.png",
             "link": "http://bigbraintherapy.com",
             "code": "https://github.com/eliram9/BigBrain"
         },
@@ -14,7 +14,7 @@
             "title": "BigBrainBlog",
             "description": "A custom web application built to manage and publish blog articles for the BigBrain Therapy website, featuring user authentication and a responsive content management dashboard.",
             "techStack": ["React.js", "Tailwind", "Firebase Authentication", "MongoDB", "GraphQL"],
-            "image": "../../../public/bbb.png",
+            "image": "/bbb.png",
             "link": "https://bigbrainblog-23f3bd84d9f8.herokuapp.com/",
             "code": "https://github.com/eliram9/bigbrainblog"
         },
@@ -23,7 +23,7 @@
             "title": "Crypto Tracker",
             "description": "A personal cryptocurrency portfolio tracker to monitor my invested coins and explore real-time prices of other cryptocurrencies.",
             "techStack": ["React.js", "Axios", "SCSS"],
-            "image": "../../../public/ct.png",
+            "image": "/ct.png",
             "link": "https://eliram9.github.io/new_cryptoreact/",
             "code": "https://github.com/eliram9/new_cryptoreact"
         },
@@ -32,7 +32,7 @@
             "title": "Ready Army",
             "description": "An official U.S. Army website providing resources and guidance to help individuals and families prepare for emergencies, promoting readiness and resilience",
             "techStack": ["Drupal", "HTML5", "CSS3", "JS", "Adobe XD", "UI/UX"],
-            "image": "../../../public/army.png",
+            "image": "/army.png",
             "link": "https://ready.army.mil/"
         }
         

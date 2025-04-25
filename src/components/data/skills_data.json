@@ -10,7 +10,7 @@
         { "id": 8, "item": "Next.js" },
         { "id": 9, "item": "SCSS" },
         { "id": 10, "item": "Tailwind CSS" },
-        {"id": 11, "item": "AI‑assisted workflows" },
+        { "id": 11, "item": "AI‑assisted workflows" },
         { "id": 12, "item": "Node.js" }
         
     ],
@@ -53,7 +53,7 @@
           {
             "id": 8,
             "item": "Grok",
-            "icon": "../../../public/grok.svg"  
+            "icon": "/grok.svg"  
           },
           {
             "id": 9,
@@ -68,7 +68,7 @@
           {
             "id": 11,
             "item": "Agile",
-            "icon": "../../../public/agile4.svg"
+            "icon": "/agile4.svg"
           },
           {
             "id": 12,

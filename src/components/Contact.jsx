@@ -78,73 +78,55 @@ const Contact = () => {
                         transition={{ duration: 0.5 }}
                         className="w-full xl:w-1/2"
                     >
-                        <div className="flex gap-4 mb-10">
-                            <a 
-                                href="https://www.linkedin.com/in/eliram9/" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                className="w-10 h-10 flex items-center justify-center text-main border border-main rounded-full hover:bg-main hover:text-white transition duration-300"
-                            >
-                                <FaLinkedinIn className="text-lg" />
-                            </a>
-                            <a 
-                                href="https://github.com/eliram9/" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                className="w-10 h-10 flex items-center justify-center text-main border border-main rounded-full hover:bg-main hover:text-white transition duration-300"
-                            >
-                                <TbBrandGithubFilled className="text-lg" />
-                            </a>
+                        <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+                            <div>
+                                <label className="block font-light text-main mb-2">
+                                    Your Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    name="name"
+                                    value={form.name}
+                                    onChange={handleChange}
+                                    placeholder="Full Name"
+                                    className="w-full px-4 py-3 rounded-lg bg-gray-900/70 dark:bg-gray-800 border border-transparent focus:border-main focus:ring-2 focus:ring-main/20 outline-none transition-colors duration-200 text-white"
+                                    required
+                                />
                             </div>
 
-                            <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
-                                <div>
-                                    <label className="block font-light text-main mb-2">
-                                        Your Name
-                                    </label>
+                            <div>
+                                <label className="block font-light text-main mb-2">
+                                    Your Email
+                                </label>
 
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        value={form.name}
-                                        onChange={handleChange}
-                                        placeholder="Full Name"
-                                        className="w-full px-4 py-3 rounded-lg bg-gray-900/70 dark:bg-gray-800 border border-transparent focus:border-main focus:ring-2 focus:ring-main/20 outline-none transition-colors duration-200 text-white"
-                                        required
-                                    />
-                                </div>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    value={form.email}
+                                    onChange={handleChange}
+                                    placeholder="john@example.com"
+                                    className="w-full px-4 py-3 rounded-lg bg-gray-900/70 dark:bg-gray-800 border border-transparent focus:border-main focus:ring-2 focus:ring-main/20 outline-none transition-colors duration-200 text-white"
+                                    required
+                                />
+                            </div>
 
-                                <div>
-                                    <label className="block font-light text-main mb-2">
-                                        Your Email
-                                    </label>
+                            <div>
+                                <label className="block font-light text-main mb-2">
+                                    Your Message
+                                </label>
+                                <textarea
+                                    name="message"
+                                    rows="5"
+                                    value={form.message}
+                                    onChange={handleChange}
+                                    placeholder="Your message here..."
+                                    className="w-full px-4 py-3 rounded-lg bg-gray-900/70 dark:bg-gray-800 border border-transparent focus:border-main focus:ring-2 focus:ring-main/20 outline-none transition-colors duration-200 resize-none text-white"
+                                    required
+                                />
+                            </div>
 
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        value={form.email}
-                                        onChange={handleChange}
-                                        placeholder="john@example.com"
-                                        className="w-full px-4 py-3 rounded-lg bg-gray-900/70 dark:bg-gray-800 border border-transparent focus:border-main focus:ring-2 focus:ring-main/20 outline-none transition-colors duration-200 text-white"
-                                        required
-                                    />
-                                </div>
-
-                                <div>
-                                    <label className="block font-light text-main mb-2">
-                                        Your Message
-                                    </label>
-                                    <textarea
-                                        name="message"
-                                        rows="5"
-                                        value={form.message}
-                                        onChange={handleChange}
-                                        placeholder="Your message here..."
-                                        className="w-full px-4 py-3 rounded-lg bg-gray-900/70 dark:bg-gray-800 border border-transparent focus:border-main focus:ring-2 focus:ring-main/20 outline-none transition-colors duration-200 resize-none text-white"
-                                        required
-                                    />
-                                </div>
-
+                            <div className="flex flex-col sm:flex-row justify-between items-center gap-6 mt-6">
                                 <motion.button
                                     type="submit"
                                     whileHover={{ scale: 1.02 }}
@@ -154,27 +136,46 @@ const Contact = () => {
                                 >
                                         {loading ? 'Sending...' : 'Send Message'}
                                 </motion.button>
-
-                                {success && (
-                                    <motion.p
-                                        initial={{ opacity: 0, y: 5 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        className="text-green-500 mt-4"
+                                <div className="flex gap-4">
+                                    <a 
+                                        href="https://www.linkedin.com/in/eliram9/" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        className="w-10 h-10 flex items-center justify-center text-main border border-main rounded-full hover:bg-main hover:text-white transition duration-300"
                                     >
-                                        Your message has been sent successfully!
-                                    </motion.p>
-                                )}
-
-                                {error && (
-                                    <motion.p
-                                        initial={{ opacity: 0, y: 5 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        className="text-red-500 mt-4"
+                                        <FaLinkedinIn className="text-lg" />
+                                    </a>
+                                    <a 
+                                        href="https://github.com/eliram9/" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        className="w-10 h-10 flex items-center justify-center text-main border border-main rounded-full hover:bg-main hover:text-white transition duration-300"
                                     >
-                                        Something went wrong. Please try again.
-                                    </motion.p>
-                                )}
-                            </form>
+                                        <TbBrandGithubFilled className="text-lg" />
+                                    </a>
+                                </div>
+                            </div>
+
+                            {success && (
+                                <motion.p
+                                    initial={{ opacity: 0, y: 5 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    className="text-green-500 mt-4"
+                                >
+                                    Your message has been sent successfully!
+                                </motion.p>
+                            )}
+
+                            {error && (
+                                <motion.p
+                                    initial={{ opacity: 0, y: 5 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    className="text-red-500 mt-4"
+                                >
+                                    Something went wrong. Please try again.
+                                </motion.p>
+                            )}
+                        </form>
                     </motion.div>
 
                     <motion.div 

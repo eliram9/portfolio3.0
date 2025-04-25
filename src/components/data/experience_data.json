@@ -5,7 +5,7 @@
             "role": "Software Engineer",
             "company": "Booz Allen Hamilton",
             "period": "2022 - Present",
-            "logo": "../../../public/bz.png",
+            "logo": "/bz.png",
             "details": [
                 "Supporting GSA on an active federal contracts.",
                 "IRA-IRS, Event Driven Architectures, Developed the front end using React and Apollo Client. Contributed to the UI/UX design of the Event Catalog platform.",
@@ -19,7 +19,7 @@
             "role": "UI & Front-End Developer",
             "company": "Pacific Western Bank",
             "period": "2021 - 2022",
-            "logo": "../../../public/pacwest1.jpg",
+            "logo": "/pacwest1.jpg",
             "details": [
                 "Designed and built an internal CMS for business clients (including companies and corporations) using Next.js.",
                 "Redesigned and enhanced UI features across multiple banking platforms to improve usability and visual consistency."
@@ -31,7 +31,7 @@
             "role": "UI Developer",
             "company": "MirLogic Solutions Corp.",
             "period": "2019 - 2021",
-            "logo": "../../../public/mir.jpeg",
+            "logo": "/mir.jpeg",
             "details": [
                 "Designed and created mock-ups for new features and public-facing pages for federal clients, including the CDC and U.S. Army.primarily using modern.",
                 "Developed a new corporate website from the ground up to align with updated branding and accessibility standards.",
@@ -45,7 +45,7 @@
             "role": "Web Developer",
             "company": "Clearly Innovative Inc.",
             "period": "2018 - 2019",
-            "logo": "../../../public/ci.png",
+            "logo": "/ci.png",
             "details": [
                 "Built responsive and reactive web applications using Angular, Vue.js, and Ionic",
                 "Collaborated with UX researchers to translate insights into polished multi-page web and mobile app designs.",
