@@ -18,16 +18,20 @@ const Hero = () => {
                     <div className="flex-1 space-y-6 text-center lg:text-left">
                         <h1 className="text-2xl md:text-3xl lg:text-4xl text-lightGray">Hi, I'm</h1> 
                         <h1 className="text-main text-4xl md:text-5xl lg:text-6xl font-bold font-orbitron tracking-wide z-10 pb-2">ELIRAM MALACHI</h1>
-                        <h2 className="text-xl md:text-3xl lg:text-3xl text-gray-300 font-light">Full Stack Developer</h2>
+                        <h2 className="text-xl md:text-3xl lg:text-3xl text-gray-300 font-light pb-5">Full Stack Developer</h2>
                         <p className="text-sm md:text-lg lg:text-xl text-lightGray max-w-2xl mx-auto lg:mx-0 font-light">
-                            I build exceptional digital experiences that make an impact. 
-                            Specializing in modern web technologies and user-centric design.
+                            I craft bold, modern interfaces using cutting-edge AI tools and web technologies. <br />
+                            My goal? Intuitive, high-impact digital experiences that drive results and leave a lasting impression.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <button className="px-6 py-3 bg-main text-white rounded-lg hover:bg-indigo-600 transition duration-300 flex items-center justify-center md:justify-start gap-2 mx-auto md:mx-0 w-full sm:w-auto">
+                       
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-5">
+                            <a href="/Eliram Malachi - Resume.pdf"
+                               download
+                               className="px-6 py-3 bg-main text-white rounded-lg hover:bg-indigo-600 transition duration-300 flex items-center justify-center md:justify-start gap-2 mx-auto md:mx-0 w-full sm:w-auto"
+                            >
                                 Download CV
                                 <FaDownload className="text-lg" />
-                            </button>
+                            </a>
                             <button className="px-6 py-3 border border-main text-main rounded-lg hover:bg-main hover:text-white transition duration-300">
                                 Contact Me
                             </button>
