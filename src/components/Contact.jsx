@@ -1,6 +1,6 @@
 import React, { useState, useRef} from 'react';
 
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -50,6 +50,9 @@ const Contact = () => {
         .then(() => {
             setLoading(false);
             setSuccess(true);
+            setTimeout(() => {
+                setSuccess(false);
+            }, 4000);
             
             // Reset form
             setForm({
@@ -61,6 +64,9 @@ const Contact = () => {
         .catch((error) => {
             setLoading(false);
             setError(true);
+            setTimeout(() => {
+                setError(false);
+            }, 4000);
             console.error('Error sending email:', error);
         });
     };
@@ -156,25 +162,33 @@ const Contact = () => {
                                 </div>
                             </div>
 
-                            {success && (
+                            <AnimatePresence>
+                              {success && (
                                 <motion.p
-                                    initial={{ opacity: 0, y: 5 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    className="text-green-500 mt-4"
+                                  key="success"
+                                  initial={{ opacity: 0, y: 5 }}
+                                  animate={{ opacity: 1, y: 0 }}
+                                  exit={{ opacity: 0, y: -10 }}
+                                  transition={{ duration: 0.5 }}
+                                  className="text-green-500 mt-4"
                                 >
-                                    Your message has been sent successfully!
+                                  Your message has been sent successfully!
                                 </motion.p>
-                            )}
+                              )}
 
-                            {error && (
+                              {error && (
                                 <motion.p
-                                    initial={{ opacity: 0, y: 5 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    className="text-red-500 mt-4"
+                                  key="error"
+                                  initial={{ opacity: 0, y: 5 }}
+                                  animate={{ opacity: 1, y: 0 }}
+                                  exit={{ opacity: 0, y: -10 }}
+                                  transition={{ duration: 0.5 }}
+                                  className="text-red-500 mt-4"
                                 >
-                                    Something went wrong. Please try again.
+                                  Something went wrong. Please try again.
                                 </motion.p>
-                            )}
+                              )}
+                            </AnimatePresence>
                         </form>
                     </motion.div>
 
