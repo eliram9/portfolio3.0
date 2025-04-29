@@ -32,9 +32,9 @@ const Hero = () => {
                                 Download CV
                                 <FaDownload className="text-lg" />
                             </a>
-                            <button className="px-6 py-3 border border-main text-main rounded-lg hover:bg-main hover:text-white transition duration-300">
+                            <a className="px-6 py-3 border border-main text-main rounded-lg hover:bg-main hover:text-white transition duration-300" href='#contact'>
                                 Contact Me
-                            </button>
+                            </a>
 
                             <div className='hidden md:flex items-center gap-4 justify-center md:justify-start mx-auto md:mx-0'>
                                 <a href="https://www.linkedin.com/in/eliram9/" className='w-10 h-10 flex items-center justify-center text-main border border-main rounded-full hover:bg-main hover:text-white transition duration-300'>
