@@ -1,5 +1,12 @@
 [
     {
+        "icon": "ba",
+        "title": "Booz Allen Hamilton",
+        "description": "Artificial Intelligence Foundational",
+        "issueDate": "2025",
+        "certificateUrl": "https://www.credly.com/badges/b61f38c2-9ad2-4104-a40f-2fc0ef2541fc"
+    },
+    {
         "icon": "apollo",
         "title": "Apollo GraphQL",
         "description": "Graph Developer - Associate",
