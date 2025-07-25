@@ -2,15 +2,24 @@
     "projects":[
         {
             "id": 1,
-            "title": "BigBrain Therapy",
-            "description": "A responsive website built for BigBrain Therapy, a private mental health practice specializing in EMDR therapy, trauma recovery, ADHD, and anxiety treatment.",
-            "techStack": ["React.js", "GraphQL", "Tailwind","UI/UX", "Figma"],
-            "image": "/bbt.png",
+            "title": "StockMonitor",
+            "description": "StockMonitor is a real-time stock tracking application that leverages AI and GraphQL to deliver live price updates, intelligent news summaries, and market insights with efficiency and clarity.",
+            "techStack": ["Next.js", "TS", "GraphQL", "Tailwind", "UI/UX", "OpenAI - API"],
+            "image": "/stockmonitor.png",
             "link": "http://bigbraintherapy.com",
             "code": "https://github.com/eliram9/BigBrain"
         },
         {
             "id": 2,
+           "title": "BigBrain Therapy",
+            "description": "A responsive website built for BigBrain Therapy, a private mental health practice specializing in EMDR therapy, trauma recovery, ADHD, and anxiety treatment.",
+            "techStack": ["React.js", "GraphQL", "Tailwind", "UI/UX", "Figma"],
+            "image": "/bbt.png",
+            "link": "http://bigbraintherapy.com",
+            "code": "https://github.com/eliram9/BigBrain"
+        },
+        {
+            "id": 3,
             "title": "BigBrainBlog",
             "description": "A custom web application built to manage and publish blog articles for the BigBrain Therapy website, featuring user authentication and a responsive content management dashboard.",
             "techStack": ["React.js", "Tailwind", "Firebase Authentication", "MongoDB", "GraphQL"],
@@ -19,7 +28,7 @@
             "code": "https://github.com/eliram9/bigbrainblog"
         },
         {
-            "id": 3,
+            "id": 4,
             "title": "Crypto Tracker",
             "description": "A personal cryptocurrency portfolio tracker to monitor my invested coins and explore real-time prices of other cryptocurrencies.",
             "techStack": ["React.js", "Axios", "SCSS"],
@@ -28,7 +37,7 @@
             "code": "https://github.com/eliram9/new_cryptoreact"
         },
         {
-            "id": 4,
+            "id": 5,
             "title": "Ready Army",
             "description": "An official U.S. Army website providing resources and guidance to help individuals and families prepare for emergencies, promoting readiness and resilience",
             "techStack": ["Drupal", "HTML5", "CSS3", "JS", "Adobe XD", "UI/UX"],
