@@ -6,8 +6,8 @@
             "description": "StockMonitor is a real-time stock tracking application that leverages AI and GraphQL to deliver live price updates, intelligent news summaries, and market insights with efficiency and clarity.",
             "techStack": ["Next.js", "TS", "GraphQL", "Tailwind", "UI/UX", "OpenAI - API"],
             "image": "/stockmonitor.png",
-            "link": "http://bigbraintherapy.com",
-            "code": "https://github.com/eliram9/BigBrain"
+            "link": "https://stock-monitor-liart.vercel.app/",
+            "code": "https://github.com/eliram9/StockMonitor"
         },
         {
             "id": 2,
